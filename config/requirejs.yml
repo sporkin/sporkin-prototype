@@ -1,0 +1,11 @@
+paths:
+  jquery: 'jquery-1.8.2'
+  underscore: 'underscore-1.4.4'
+  backbone: 'backbone-1.0.0'
+  chaplin: 'chaplin-0.8.1'
+shim:
+  'underscore':
+    exports: '_'
+  'backbone':
+    deps: ['underscore', 'jquery']
+    exports: 'Backbone'
