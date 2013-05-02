@@ -4,17 +4,17 @@ define [
   'routes'
   # Require base controllers manually because
   # they aren’t compiled individually
-  'controllers/hello_world_controller'
+  'controllers/social_connect_controller'
 ], (Chaplin, Layout, routes) ->
   'use strict'
 
   # The application object
   # Choose a meaningful name for your application
-  class HelloWorldApplication extends Chaplin.Application
+  class SporkinApplication extends Chaplin.Application
 
     # Set your application name here so the document title is set to
     # “Controller title – Site title” (see Layout#adjustTitle)
-    title: 'Chaplin Example Application'
+    title: 'sporkin'
 
     initialize: ->
       super

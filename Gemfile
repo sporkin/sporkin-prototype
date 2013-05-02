@@ -10,9 +10,11 @@ gem 'requirejs-rails'
 gem 'dust-rails'
 
 group :assets do
+  gem 'therubyracer'
+  gem 'less-rails'
+  gem 'twitter-bootstrap-rails'
   gem 'sass-rails'
   gem 'coffee-rails'
-  #gem 'compass-rails'
   gem 'haml_coffee_assets'
   gem 'uglifier'
 end
@@ -21,7 +23,12 @@ end
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # To use Jbuilder templates for JSON
-# gem 'jbuilder'
+gem 'jbuilder'
+
+group :test, :development do
+  gem 'spork'
+  gem 'rspec-rails'
+end
 
 # Use unicorn as the app server
 # gem 'unicorn'

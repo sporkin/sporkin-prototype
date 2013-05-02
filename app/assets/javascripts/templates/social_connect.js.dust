@@ -1,0 +1,8 @@
+<div class='span3'>
+  <form>
+    <fieldset>
+      <legend>social connect</legend>
+      <button class="btn btn-medium btn-primary" type="button">Connect with Facebook</button>
+    </fieldset>
+  </form>
+</div>

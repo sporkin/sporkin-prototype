@@ -1,6 +1,37 @@
+<!--
 <p>email</p>
 <p>password</p>
 {name}
 {>"comments/bar":a/}
+<b>abc</b>
+-->
 
+<div class='row well'>
+  <div class='span3 offset1'>
+    <form>
+      <fieldset>
+        <legend>social connect</legend>
+        <button class="btn btn-medium btn-primary" type="button">Connect with Facebook</button>
+      </fieldset>
+    </form>
+  </div>
+  <div class='span1 text-center lead'><br>or</div>
+  <div class='span3'>
+    <form>
+      <fieldset>
+        <legend>New user sign up</legend>
+        <label>email</label>
+        <input type="text" placeholder="Type something…">
+        <label>password</label>
+        <input type="text" placeholder="Type something…">
+        <label>password confirm</label>
+        <input type="text" placeholder="Type something…">
 
+        <label class="checkbox">
+          <input type="checkbox"> agree terms
+        </label>
+        <button type="submit" class="btn">Sign Up</button>
+      </fieldset>
+    </form>
+  </div>
+</div>

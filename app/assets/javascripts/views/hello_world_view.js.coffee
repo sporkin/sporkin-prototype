@@ -5,7 +5,7 @@ define [
 
   class HelloWorldView extends View
 
-    templateName: 'hello_world'
+    templateName: 'foo'
 
     className: 'hello-world'
 
@@ -13,3 +13,4 @@ define [
     container: '#page-container'
     # Automatically render after initialize
     autoRender: true
+    autoAttach: true

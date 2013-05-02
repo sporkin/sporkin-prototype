@@ -6,10 +6,24 @@ define [
 
   class View extends Chaplin.View
 
-    getTemplateFunction: ->
-      #console.log 'View#getTemplateFunction', @templateName, JST[@templateName]
-      templateFunction = JST[@templateName]
-      if typeof @templateName is 'string' and typeof templateFunction isnt 'function'
-        throw new Error "View template #{@templateName} not found"
+    render: ->
+      return false if @disposed
+      templateFunc = @getTemplateFunction()
+      dust.render @templateName, @getTemplateData(), (err, out) =>
+        console.log @$el.html()
+        @$el.html out
+      this
 
-      templateFunction
+
+    getTemplateFunction: ->
+      return @templateName
+
+
+
+    # getTemplateFunction: ->
+    #   #console.log 'View#getTemplateFunction', @templateName, JST[@templateName]
+    #   templateFunction = JST[@templateName]
+    #   if typeof @templateName is 'string' and typeof templateFunction isnt 'function'
+    #     throw new Error "View template #{@templateName} not found"
+    # 
+    #   templateFunction
