@@ -11,10 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130425081220) do
+ActiveRecord::Schema.define(:version => 20130505093257) do
+
+  create_table "identities", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "type"
+    t.string   "provider"
+    t.string   "fb_access_token"
+    t.string   "fb_id"
+    t.string   "fb_email"
+    t.string   "fb_first_name"
+    t.string   "fb_last_name"
+    t.string   "fb_url"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
 
   create_table "users", :force => true do |t|
-    t.string   "name"
+    t.string   "uuid"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

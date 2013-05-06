@@ -5,8 +5,15 @@ define [
   'use strict'
 
   class User extends Model
-    # This model is intentionally left blank
-    
-    #initialize: (attributes, options) ->
-      #super
-      #console.debug 'HelloWorld#initialize'
+    url: "/users"
+
+    initialize: (attributes, options) ->
+      super
+
+    createWithFacebook: (attributes) ->
+      params =
+        type: "facebook"
+        accessToken: attributes.accessToken
+
+      @save params,
+        patch: true

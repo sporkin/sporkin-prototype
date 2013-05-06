@@ -36,3 +36,17 @@ RSpec.configure do |config|
   #     --seed 1234
   config.order = "random"
 end
+
+
+module TestHelper
+  module FacebookAPI
+    def self.included(receiver)
+      @@test_fb_user = nil
+    end
+
+    def fb_test_user
+      return @@test_fb_user if @@test_fb_user
+      @@test_fb_user = Koala::Facebook::TestUsers.new(:app_id => CONFIG["fb_app_id"], :secret => CONFIG["fb_app_secret"]).create(true, "user_likes,email")
+    end
+  end
+end

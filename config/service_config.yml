@@ -1,0 +1,7 @@
+development:
+  fb_app_id: 334420936674030
+  fb_app_secret: 601b4da0caca00b11d2ea0125703b082
+
+test:
+  fb_app_id: 334420936674030
+  fb_app_secret: 601b4da0caca00b11d2ea0125703b082

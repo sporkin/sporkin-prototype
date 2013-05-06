@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'uuid'
+gem 'koala'
 gem 'rails'
 gem 'pg'
 gem 'haml'

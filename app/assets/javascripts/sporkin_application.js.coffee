@@ -5,7 +5,8 @@ define [
   # Require base controllers manually because
   # they aren’t compiled individually
   'controllers/social_connect_controller'
-], (Chaplin, Layout, routes) ->
+  'controllers/session_controller'
+], (Chaplin, Layout, routes, SocialConnectController, SessionController) ->
   'use strict'
 
   # The application object
@@ -48,7 +49,7 @@ define [
       # Freeze the application instance to prevent further changes.
       Object.freeze? this
 
-
+      new SessionController()
 
     # Override standard layout initializer
     # ------------------------------------
@@ -66,6 +67,7 @@ define [
       # and views which are needed the whole time, for example header, footer
       # or navigation views.
       # e.g. new NavigationController()
+      new SessionController()
 
     # Create additional mediator properties
     # -------------------------------------

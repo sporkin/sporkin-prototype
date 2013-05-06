@@ -1,0 +1,74 @@
+{
+    "id": "1454680036",
+    "name": "Juhyeong Yu",
+    "first_name": "Juhyeong",
+    "last_name": "Yu",
+    "link": "http://www.facebook.com/juhyeong.yu",
+    "username": "juhyeong.yu",
+    "location": {
+        "id": "108212625870265",
+        "name": "Mountain View, California"
+    },
+    "work": [{
+        "employer": {
+            "id": "60004615820",
+            "name": "Groupon"
+        },
+        "location": {
+            "id": "104022926303756",
+            "name": "Palo Alto, California"
+        },
+        "position": {
+            "id": "109542932398298",
+            "name": "Software Engineer"
+        },
+        "start_date": "0000-00"
+    }, {
+        "employer": {
+            "id": "105659089473877",
+            "name": "Nominum, Inc."
+        },
+        "location": {
+            "id": "108490965842587",
+            "name": "Redwood City, California"
+        },
+        "position": {
+            "id": "108480125843293",
+            "name": "Web Developer"
+        },
+        "start_date": "2010-10",
+        "end_date": "0000-00"
+    }],
+    "favorite_athletes": [{
+        "id": "64637653943",
+        "name": "LeBron James"
+    }],
+    "education": [{
+        "school": {
+            "id": "115679031779379",
+            "name": "Yusung High School"
+        },
+        "type": "High School"
+    }, {
+        "school": {
+            "id": "10111634660",
+            "name": "UC Berkeley"
+        },
+        "year": {
+            "id": "142963519060927",
+            "name": "2010"
+        },
+        "concentration": [{
+            "id": "104076956295773",
+            "name": "Computer Science"
+        }],
+        "type": "College"
+    }],
+    "gender": "male",
+    "email": "zzurang@hotmail.com",
+    "timezone": -7,
+    "locale": "en_US",
+    "verified": true,
+    "updated_time": "2013-03-28T07:22:41+0000"
+}
+"
