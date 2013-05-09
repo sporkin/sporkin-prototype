@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130505093257) do
+ActiveRecord::Schema.define(:version => 20130508093535) do
 
   create_table "identities", :force => true do |t|
     t.integer  "user_id"
@@ -23,8 +23,13 @@ ActiveRecord::Schema.define(:version => 20130505093257) do
     t.string   "fb_first_name"
     t.string   "fb_last_name"
     t.string   "fb_url"
-    t.datetime "created_at",      :null => false
-    t.datetime "updated_at",      :null => false
+    t.datetime "created_at",                            :null => false
+    t.datetime "updated_at",                            :null => false
+    t.string   "pwd_first_name"
+    t.string   "pwd_last_name"
+    t.string   "pwd_email"
+    t.string   "pwd_encrypted_password", :limit => 128
+    t.string   "pwd_password_salt"
   end
 
   create_table "users", :force => true do |t|
